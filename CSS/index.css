@@ -1,0 +1,739 @@
+@font-face {
+    font-family: "Heineken";
+    src: url('../FONT/Heineken/HEINEKENCore.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Arsilon";
+    src: url('../FONT/arsilon/Arsilon.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Heineken";
+    src: url('../FONT/Heineken/HEINEKENCoreLight.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Heineken";
+    src: url('../FONT/Heineken/HEINEKENCore-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Heineken";
+    src: url('../FONT/Heineken/HEINEKENCore-Bold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Heineken";
+    src: url('../FONT/Heineken/HEINEKENCore-ExtraBold.ttf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Heineken";
+    src: url('../FONT/Heineken/HEINEKENCore-ExtraBold.ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Heineken";
+    src: url('../FONT/Heineken/HEINEKENCore-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Heineken";
+    src: url('../FONT/Heineken/HEINEKENCoreLightItalic.ttf');
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+body {
+    background-color: #001c12;
+    font-family: "Heineken", Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+
+.when-flex {
+    display: flex;
+}
+
+.navbar-dark {
+    background-color: #001c12;
+}
+
+.nav-item {
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.nav-item:hover {
+    background-color: white;
+    color: #005b23;
+}
+
+.nav-item:hover .nav-link {
+    color: #005b23 !important;
+}
+
+.navbar-nav>li {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 700;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.navbar-dark .navbar-toggler {
+    color: white;
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.bg-cover {
+    background-repeat: no-repeat;
+    background-size: 100vw 62vw;
+    width: 100%;
+    height: 62vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.img-header {
+    width: 100vw;
+    height: 62vw;
+}
+
+.home-bg-cover {
+    background-repeat: no-repeat;
+    background-size: 100vw 58vw;
+    height: 58vw;
+    background-image: url('../image/bg-home.png');
+}
+
+#btn-apply {
+    position: absolute;
+    left: 41vw;
+    top: 22vw;
+    padding-top: 12px;
+    width: 300px;
+    background-color: white;
+    color: #00b802;
+    text-align: center;
+    font-weight: 800;
+    vertical-align: middle;
+    border-radius: 40px;
+    font-size: xx-large;
+}
+
+#home-quote {
+    display: none;
+}
+
+#teaser-video {
+    width: 38vw;
+    height: 22vw;
+    background-color: white;
+    padding: 20px;
+    margin-top: 15vw;
+}
+
+#teaser-content {
+    padding-top: 20vw;
+    padding-bottom: 15vw;
+    padding-left: 5vw;
+}
+
+.text-header img {
+    width: 180px;
+    height: 0;
+}
+
+.section-title {
+    color: #015e28;
+    font-weight: 900;
+}
+
+.section {
+    text-align: center;
+    background-color: white;
+}
+
+.section-subtitle {
+    color: #1a6b3a;
+}
+
+.fixed-media {
+    position: fixed;
+    width: 70px;
+    box-shadow: 0 0 6px #000;
+    right: 0;
+    top: 30vh;
+    z-index: 100;
+}
+
+.media-item {
+    overflow-wrap: break-word;
+    color: #005b23;
+    background-color: white;
+    text-align: center;
+    height: 60px;
+    font-weight: 800;
+    padding-top: 10px;
+    margin-bottom: 0;
+    border: 1px solid black
+}
+
+.media-item:hover {
+    background-color: #005b23;
+    color: white;
+}
+
+.home-title {
+    color: #005b23;
+    font-weight: 900;
+}
+
+#why {
+    background-image: url('../image/bg-why.png');
+    background-repeat: no-repeat;
+    background-size: 100% 87vw;
+    height: 87vw;
+}
+
+.section-title {
+    margin-bottom: 5vw;
+}
+
+.section-subtitle {
+    margin-bottom: 2vw;
+}
+
+.can-item {
+    background-image: url('../image/why-can-white.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    width: 18vw;
+    height: 9vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: large;
+    margin-right: 7vw;
+}
+
+.can-item:hover {
+    background-image: url('../image/why-can-green.png');
+    color: white;
+}
+
+.why-item {
+    background-image: url('../image/why-item-white.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15vw;
+    height: 20vw;
+    padding-left: 1vw;
+    padding-top: 10vw;
+    padding-right: 1vw;
+    font-size: larger;
+}
+
+.value-content .col-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.value-content {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.why-item:hover {
+    background-image: url('../image/why-item-green.png');
+    color: white;
+}
+
+.why-item-title {
+    font-size: x-large;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.col-6.reversed .can-item {
+    margin-right: 0vw;
+    margin-left: 7vw;
+    background-image: url('../image/why-can-white-reversed.png');
+}
+
+.col-6.reversed .can-item:hover {
+    background-image: url('../image/why-can-green-reversed.png');
+}
+
+.why-content .col-6 {
+    display: flex;
+    justify-content: end;
+}
+
+.why-content .col-6.reversed {
+    display: flex;
+    justify-content: start;
+}
+
+.why-content.first-row {
+    margin-bottom: 5vw;
+}
+
+#when {
+    background-image: url('../image/bg-when.png');
+    background-repeat: no-repeat;
+    background-size: 100% 57vw;
+    height: 50vw;
+}
+
+.when-item{
+    margin-right: 4vw;
+}
+
+.when-content {
+    width: 12vw;
+    height: 24vw;
+    border-top-left-radius: 12vw;
+    border-top-right-radius: 12vw;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background-size: auto 21vw;
+    background-position: bottom center;
+}
+
+.when-content:before{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-top-left-radius: 12vw;
+    border-top-right-radius: 12vw;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.when-title{
+    font-weight: 800;
+    font-size: large;
+}
+
+.when-title p{
+    margin-bottom: 0;
+}
+
+.when-content:hover,
+.when-content:focus,
+.when-content:active {
+    color: white;
+    font-size: large;
+}
+
+.when-content:hover:before,
+.when-content:focus:before,
+.when-content:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.application {
+    background-image: url('../image/application.png');
+    border: 5px solid #0023a0;
+}
+
+.application:before {
+    background-color: #0023a0;
+    content: "Getting to know you is always important and exciting! It's all about you and it starts from here...";
+}
+
+.assessment {
+    background-image: url('../image/assessment.png');
+    border: 5px solid #f7921d;
+}
+
+.assessment:before {
+    background-color: #f7921d;
+    content: "Don't be pressured! It's kind of game here. Just play, have fun, enjoy the game.";
+}
+
+.interview {
+    background-image: url('../image/interview.png');
+    border: 5px solid #46863f;
+}
+
+.interview:before {
+    background-color: #46863f;
+    content: "We couldn't be more excited to see you in person at HEINEKEN Vietnam office. Let's have a sip!";
+}
+
+.brew {
+    background-image: url('../image/brew.png');
+    border: 5px solid #d42f3f;
+}
+
+.brew:before {
+    background-color: #d42f3f;
+    content: "It's not only your day to shine, but it's also a chance to gain more business insights through individual and group work. Prior Brew Day, there will be an engagement and market visit day with interesting activities. Stay tuned!";
+}
+
+.onboard {
+    background-image: url('../image/onboard.png');
+    background-size: auto 32vw;
+    background-position: bottom 75% right 43%;
+    border: 5px solid #b0785a;
+}
+
+.onboard:before {
+    background-color: #b0785a;
+    content: "Your journey to brew a better you and brew the joy of true togetherness starts today. Welcome onboard!";
+}
+
+#who{
+    background-image: url('../image/bg-who.png');
+    background-repeat: no-repeat;
+    background-size: 100% 57vw;
+    height: 57vw;
+}
+
+#who .container{
+    width: 60%;
+}
+
+.who-flex{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.who-item{
+    background-image: url('../image/who-item-white.png');
+    background-repeat: no-repeat;
+    background-size: 15vw 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    height: 15vw;
+    width: 15vw;
+}
+
+.who-item:hover{
+    background-image: url('../image/who-item-green.png');
+    color: white;
+}
+
+
+/* .application{
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    max-width: 400px;
+    position: relative;
+    padding: 2rem;
+    box-shadow: inset 0 0 0 4px #000, inset -4px -4px 0 6px #CCC;
+    background-color: #FFF;
+    cursor: pointer;
+}
+
+.application::before{
+    position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  transform-origin: 0 bottom 0;
+  transform: scaleY(0);
+  transition: 0.4s ease-out;
+}
+
+.application:hover::before{
+    transform: scaleY(1);
+}
+
+.application:hover{
+    background-image: url(none);
+    background-color: #0023a0;
+} */
+
+@media screen and (max-width: 1500px) {
+    #btn-apply {
+        width: 150px;
+        font-size: medium;
+        border-radius: 10px;
+        padding-top: 3px;
+        height: 30px;
+        left: 43vw;
+    }
+
+    .home-content p {
+        font-size: smaller;
+    }
+
+    .home-content .display-4 {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .home-content .h1 {
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+
+    .can-item {
+        width: 24vw;
+        height: 12vw;
+        margin-right: 5vw;
+    }
+
+    .col-6.reversed .can-item {
+        margin-right: 0vw;
+        margin-left: 5vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        padding: 0;
+    }
+
+    .home-content {
+        display: block !important;
+    }
+
+    .home-content .col-6 {
+        width: 85%;
+    }
+
+    .home-bg-cover {
+        background-image: none;
+        height: fit-content;
+    }
+
+    #home-quote {
+        display: block;
+    }
+
+    #teaser-video {
+        width: 85vw;
+        height: 49vw;
+        margin-left: 5vw;
+        margin-top: 5vw;
+    }
+
+    #teaser-content {
+        background-color: #005b23;
+        padding: 0;
+    }
+
+    .can-item {
+        padding-right: 7.5vw;
+        padding-left: 7.5vw;
+        font-size: small;
+    }
+
+    .col-6.reversed .can-item {
+        font-size: small;
+    }
+
+    .why-content .col-6 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .why-content .col-6.reversed {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .why-content.first-row {
+        margin-bottom: 0;
+    }
+
+    .why-content .col-6 .can-item {
+        width: 50vw;
+        height: 25vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        font-size: xx-large;
+        margin-right: 0vw;
+        margin-bottom: 5vw;
+    }
+
+    .why-content .col-6.col-6.reversed .can-item {
+        width: 50vw;
+        height: 25vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        font-size: xx-large;
+        margin-left: 0vw;
+        margin-bottom: 5vw;
+    }
+
+    .value-content .col-3 {
+        width: 100%;
+    }
+
+    .why-item {
+        width: 45vw;
+        height: 60vw;
+        padding-left: 2vw;
+        padding-top: 30vw;
+        padding-right: 2vw;
+        font-size: 2.5rem;
+        margin-bottom: 10vw;
+    }
+
+    .why-item-title {
+        font-size: 3rem;
+    }
+
+    #why {
+        height: auto;
+        background-position: center;
+    }
+
+    .when-flex {
+        display: block;
+    }
+
+    #when{
+        height: auto;
+        background-position: center;
+    }
+    
+    .when-content{
+        width: 25vw;
+        height: 50vw;
+        border-top-left-radius: 12vw;
+        border-top-right-radius: 12vw;
+        background-size: auto 45vw;
+    }
+
+    .when-item{
+        margin-bottom: 50px;
+    }
+
+    .onboard{
+        background-size: auto 65vw;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #btn-apply {
+        width: 100px;
+        font-size: xx-small;
+        border-radius: 10px;
+        padding-top: 3px;
+        height: 20px;
+        left: 43vw;
+    }
+
+    .can-item {
+        font-size: medium !important;
+    }
+
+    .why-item {
+        font-size: large;
+    }
+
+    .why-item-title {
+        font-size: x-large;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #btn-apply {
+        width: 100px;
+        font-size: xx-small;
+        border-radius: 10px;
+        padding-top: 3px;
+        height: 20px;
+        left: 36vw;
+    }
+
+    #home-web {
+        display: none;
+    }
+}
