@@ -475,7 +475,7 @@ body {
 
 .who-flex{
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
 }
@@ -671,16 +671,42 @@ body {
 
     #why {
         height: auto;
-        background-position: center;
+        background-size: cover;
+        background-position: right;
     }
 
     .when-flex {
-        display: block;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .who-flex{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    #who{
+        height: auto;
+        background-size: cover;
+    }
+
+    .who-item{
+        width: 35vw;
+        height: 35vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        background-size: 35vw 35vw;
+        margin-bottom: 20px;
+    }
+
+    #who .container{
+        padding-bottom: 300px;
     }
 
     #when{
         height: auto;
-        background-position: center;
+        background-size: cover;
     }
     
     .when-content{
@@ -693,6 +719,7 @@ body {
 
     .when-item{
         margin-bottom: 50px;
+        margin-right: 0;
     }
 
     .onboard{
